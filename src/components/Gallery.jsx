@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image as ImageIcon } from 'lucide-react';
+
 import { useLanguage } from '../context/LanguageContext';
 
 export default function Gallery() {
@@ -23,16 +23,21 @@ export default function Gallery() {
 
         {/* Gallery Grid - Rigid borders */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
+          {[
+            { id: 1, src: '/images/IMG20260119143855.jpg' },
+            { id: 2, src: '/images/IMG_20200708_135343.jpg' },
+            { id: 3, src: '/images/IMG-20210620-WA0008.jpg' }
+          ].map((item) => (
             <div 
-              key={item}
+              key={item.id}
               className="bg-white dark:bg-slate-800 border-2 border-gray-300 dark:border-slate-700 p-2 group hover:border-[#003366] dark:hover:border-blue-500 transition-colors cursor-pointer"
             >
               <div className="bg-gray-200 dark:bg-slate-700 aspect-video flex flex-col items-center justify-center relative overflow-hidden">
-                <ImageIcon className="w-8 h-8 text-gray-400 dark:text-gray-500 mb-2" />
-                <span className="text-gray-500 dark:text-gray-400 font-bold text-sm uppercase">
-                  {t.gallery.project} {item}
-                </span>
+                <img 
+                  src={item.src} 
+                  alt={`Project ${item.id}`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
                 
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-[#003366]/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
