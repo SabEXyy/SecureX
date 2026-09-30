@@ -11,6 +11,10 @@ const translations = {
       gallery: 'Gallery',
       contact: 'Contact',
       getQuote: 'Get a Quote',
+      govApproved: 'UP GOVT. APPROVED A-CLASS ELECTRICAL CONTRACTOR',
+      callUs: 'Call: +91 88823 50019',
+      govApproved: 'UP GOVT. APPROVED A-CLASS ELECTRICAL CONTRACTOR',
+      callUs: 'Call: +91 88823 50019',
     },
     // Hero
     hero: {

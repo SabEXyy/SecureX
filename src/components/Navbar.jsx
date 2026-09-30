@@ -30,7 +30,7 @@ const Navbar = () => {
       {/* Tier 1: Top Utility Bar (Govt Style) */}
       <div className="bg-[#990000] dark:bg-red-950 text-white text-xs sm:text-sm py-1.5 px-4 flex justify-between items-center transition-colors">
         <div className="flex items-center gap-4">
-          <span className="font-semibold tracking-wider">UP GOVT. APPROVED A-CLASS ELECTRICAL CONTRACTOR</span>
+          <span className="font-semibold tracking-wider">{t.nav.govApproved}</span>
         </div>
         <div className="flex items-center gap-2 sm:gap-4">
           <div className="hidden sm:flex gap-1 pr-2 border-r border-white/30">
@@ -160,7 +160,7 @@ const Navbar = () => {
               className="flex justify-center items-center gap-2 w-full py-3 bg-white dark:bg-slate-800 text-[#003366] dark:text-blue-200 font-bold uppercase border-b-4 border-gray-300 dark:border-slate-700 shadow-sm"
             >
               <Phone className="w-5 h-5" />
-              Call: +91 88823 50019
+              {t.nav.callUs}
             </a>
             <a
               href="https://wa.me/918882350019?text=Hello"

@@ -63,7 +63,7 @@ export default function About() {
                 <div className="bg-[#990000] text-white p-3 mb-3">
                   <Calendar className="w-6 h-6" />
                 </div>
-                <h4 className="text-2xl font-black text-[#003366] dark:text-white mb-1">8+</h4>
+                <h4 className="text-xl sm:text-2xl font-black text-[#003366] dark:text-white mb-1">{t.about.stats.years}</h4>
                 <p className="text-sm font-bold text-gray-600 dark:text-gray-400 uppercase">{t.about.stats.experience}</p>
               </div>
               
